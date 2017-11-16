@@ -3,7 +3,7 @@ Introduction:
 	The application is used to keep track of employees and their salary on the basis of companies.
 	
 Features:
-	- Add Employee to an existing or a new company.
+	- Add Employee to an existing or a new company.\n
 	- Delete specific employee from the database.
 	- View company specific employees.
 	- Total money spent for each company.
