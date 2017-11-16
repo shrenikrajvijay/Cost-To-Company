@@ -34,6 +34,7 @@ body
   background-color: #ddd;
   margin: 1%;
   margin-left:0.5%;
+  padding-bottom:5%;
 }
 .left-text, .right-text
 {
@@ -72,8 +73,7 @@ table tr:nth-child(odd) {
 table tr:nth-child(even) {
   background-color: #ffffff;
 }
-
-input.ng-invalid.ng-dirty {
+input.ng-invalid.ng-touched.ng-valid-parse{
   background-color:pink;
 }
 .title-text{

@@ -58,8 +58,12 @@ var app = angular.module('ibm', ['ngSanitize', 'ui.bootstrap', 'ngRoute', 'ui.se
                 };
         	    $http.post("/storeData", person).
                 success(function(data, status, headers, config){
-                console.log($scope.Person);
                         $scope.Person.push(person);
+			$scope.fName = "";
+			$scope.lName = "";
+			$scope.address = "";
+			$scope.salary = "";
+			$scope.company = "";
                     }).
                     error(function(data, status, headers, config){
                     });
