@@ -1,6 +1,6 @@
 # Cost-To-Company
 Introduction:
-	This application is used to keep track of employees and their salary on the basis of companies. It is a single page application in that the app is loaded as a single HTML page and dynamically update the page as the user interacts with the app.
+	This application is used to keep track of employees and their salary on the basis of companies. It is a single page application where the app is loaded as a single HTML page and dynamically updates the page as the user interacts with the app.
 	
 Features:
 
@@ -16,7 +16,7 @@ Technologies Used:
 * Database: MySQL
 * Testing: Karma, Jasmine, chai, istanbul 
 
-How to replicate/recreate the environment:
+Installation:
 1. Use command-line to clone files from github.
 	- git clone https://github.com/shrenikrajvijay/Cost-To-Company
 
