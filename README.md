@@ -10,10 +10,11 @@ Features:
 * Total money spent for each company.				
 
 Technologies Used:
-	Front-End: Html, Css, AngularJS, Bootstrap
-	Server-Side: Node.js
-	Database: MySQL
-	Testing: Karma, Jasmine, chai, istanbul 
+
+* Front-End: Html, Css, AngularJS, Bootstrap
+* Server-Side: Node.js
+* Database: MySQL
+* Testing: Karma, Jasmine, chai, istanbul 
 
 How to replicate/recreate the environment:
 1. Use command-line to clone files from github.
