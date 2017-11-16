@@ -1,14 +1,15 @@
 # Cost-To-Company
 Introduction:
-	This application is used to keep track of employees and their salary on the basis of companies.
+	This application is used to keep track of employees and their salary on the basis of companies. It is a single page application in that the app is loaded as a single HTML page and dynamically update the page as the user interacts with the app.
 	
 Features:
-	* Add Employee to an existing or a new company.						
-	* Delete specific employee from the database.							
-	* View company specific employees.						
-	* Total money spent for each company.				
 
-Technology Used:
+* Add Employee to an existing or a new company.						
+* Delete specific employee from the database.							
+* View company specific employees.						
+* Total money spent for each company.				
+
+Technologies Used:
 	Front-End: Html, Css, AngularJS, Bootstrap
 	Server-Side: Node.js
 	Database: MySQL
