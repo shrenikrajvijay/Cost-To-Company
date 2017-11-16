@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Company Database</title>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-route.js"></script>
+  <script src="js/select.js"></script>
+  <link rel="stylesheet" href="css/select.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">
+  <link rel="stylesheet" type="text/css" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+  <script src="js/main.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- theme  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">	
+ 
+
+</head>
+
+<body ng-app="ibm" style="background-color:#e1f0f4;">
+    <div>
+    	<img class="spinner" src="images/spinner.gif" ng-show="loading" />
+    </div>
+    <div ng-view></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+  
+    	<div class="title-text"> <h1> Cost To Company </h1> </div>
+                          <a href="#/main"><button class="form-control btn btn-success" style="width:10%;margin-left:3%"> Back </button></a>
+	
+<div class="container" style="margin:0 auto; width:100%;" ng-controller="DetailCtrl" ng-init="c.selected = ''">
+    <div class="right-div right-text">
+		<div class="dropdown">
+                  <ui-select ng-model="c.selected" ng-click="getTotal()" theme="selectize"  style="width: 300px;margin:2% auto;" title="Choose a company">
+                    <ui-select-match placeholder="Select or search a company in the list...">{{$select.selected["Company"]}}</ui-select-match>
+                    <ui-select-choices repeat="x in Person | unique:'Company' | filter: $select.search">
+                      <span ng-bind-html="x.Company | highlight: $select.search"></span>
+                    </ui-select-choices>
+                  </ui-select>
+		</div>
+		<table style="width:85%; margin: 3% auto;" ng-show="c.selected">
+			<tr>
+				<th> No. </th>
+				<th> First Name </th>
+				<th> Last Name </th>
+				<th> Address </th>
+				<th> Salary </th>
+				<th>  </th>
+			</tr>
+  			<tr ng-repeat="x in Person | filter:{Company:c.selected['Company']}:true">
+				<input type="hidden" ng-value="x.id" />
+    				<td>{{ $index+1 }}</td>
+    				<td>{{ x.FirstName }}</td>
+    				<td>{{ x.LastName }}</td>
+    				<td>{{ x.Address }}</td>
+    				<td>{{ x.Salary }}</td>
+
+  			</tr>
+			<tr></tr>
+			<tr>
+				<th> Total </th>
+				<th>  </th>
+				<th>  </th>
+				<th>  </th>
+				<th> {{total}} </th>
+			</tr>
+		</table>
+    </div>
+  </div>

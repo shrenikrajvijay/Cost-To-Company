@@ -1,0 +1,101 @@
+body
+{
+  background-color: #fcfcfc;
+  height:100%;
+}
+.container
+{
+  text-align: center;
+  padding: 15px;  
+  height:100%;
+}
+.left-div
+{
+  position: sticky;
+  top:1em;
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+  padding: 2%;
+  background-color: #ddd;
+  border-radius: 3px;
+  margin: 1%;
+  margin-right:0.5%;
+  vertical-align: top;
+  bottom:0;
+  height:100%;
+}
+.right-div
+{
+  height:100%;
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+  background-color: #ddd;
+  margin: 1%;
+  margin-left:0.5%;
+}
+.left-text, .right-text
+{
+  color: #000;
+}
+@media screen and (max-width: 800px) 
+{
+  .left-div, .right-div
+    {
+       width: 90%;
+    }
+  .left-div
+    {
+       position:initial;
+    }
+}
+table, th , td  {
+  border-collapse: collapse;
+  padding: 5px;
+  text-align:center;
+}
+table tr {
+  line-height:2em;
+}
+table tr th {
+  text-align:center;
+  background-color:#444;
+  color:white;
+}
+table tr td {
+  font-size:1em;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+input.ng-invalid.ng-dirty {
+  background-color:pink;
+}
+.title-text{
+  text-align:center;
+  top:1em;
+  overflow:hidden;
+  margin: 0 auto;
+}
+.spinner{
+  position:absolute;
+  z-index:100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.input-box{
+   width:75%;
+}
+
+.dropdown{
+  margin:0 auto;
+  text-align: center;
+}

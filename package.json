@@ -1,0 +1,33 @@
+{
+  "name": "ibm",
+  "version": "1.0.0",
+  "description": "Cost to company app",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-mocks": "^1.6.6",
+    "angular-spinners": "^5.0.4",
+    "angular-ui-router": "^0.4.3",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "express": "^4.15.2",
+    "istanbul": "^0.4.5",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "mysql": "^2.15.0",
+    "ui-select": "^0.19.8"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "tests": "NODE_ENV=test istanbul cover _mocha ./test/ServerTest.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
