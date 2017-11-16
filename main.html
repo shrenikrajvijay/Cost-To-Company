@@ -1,37 +1,39 @@
-  
 <div class="container" style="margin:0 auto; width:100%;" ng-controller="PersonCtrl">
     <div class="left-div left-text">
-    <div class="title-text"> <h1> Add Employee</h1> </div>
-		<div>
-        	    <form>
-                        <div class="form-group">
-                          <label for="usr">First Name:</label>
-                          <input type="text" ng-model="fName" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Last Name:</label>
-                          <input type="text" ng-model="lName" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Address:</label>
-                          <input type="text" ng-model="address" class="form-control">
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Company</label>
-                          <input type="text" ng-model="company" class="form-control">
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Salary:</label>
-                          <input type="number" ng-model="salary" class="form-control">
-                        </div>
-                        <div class="form-group" style="margin-top:50px;">
-                          <button ng-click="submitData();" class="form-control btn btn-success"> Add </button>
-                        </div>
-                    </form>
-		</div>
-			<hr>
-                          <a href="#/detail"><button class="form-control btn btn-primary  pull-right"> Check Cost To Company </button></a>
+    <div class="title-text"> 
+        <h1> Add Employee</h1> 
     </div>
+	<div>
+        <form>
+            <div class="form-group">
+                <label for="usr">First Name:</label>
+                <input type="text" ng-model="fName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Last Name:</label>
+                <input type="text" ng-model="lName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Address:</label>
+                <input type="text" ng-model="address" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Company</label>
+                <input type="text" ng-model="company" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Salary:</label>
+                <input type="number" ng-model="salary" class="form-control">
+            </div>
+            <div class="form-group" style="margin-top:50px;">
+                <button ng-click="submitData();" class="form-control btn btn-success"> Add </button>
+                </div>
+            </form>
+		</div>
+		<hr />
+        <a href="#/detail"><button class="form-control btn btn-primary  pull-right"> Check Cost To Company </button></a>
+    </div>
+
     <div class="right-div right-text">
     	<div class="title-text"> <h1> Company Database </h1> </div>
 		<table style="width:85%; margin: 0 auto;">
@@ -45,15 +47,14 @@
 				<th>  </th>
 			</tr>
   			<tr ng-repeat="x in Person">
-    				<td>{{ $index+1 }}</td>
-    				<td>{{ x.FirstName }}</td>
-    				<td>{{ x.LastName }}</td>
-    				<td>{{ x.Address }}</td>
-    				<td>{{ x.Company }}</td>
-    				<td>{{ x.Salary }}</td>
+    			<td>{{ $index+1 }}</td>
+    			<td>{{ x.FirstName }}</td>
+    			<td>{{ x.LastName }}</td>
+    			<td>{{ x.Address }}</td>
+    			<td>{{ x.Company }}</td>
+    			<td>{{ x.Salary }}</td>
 				<td><button type="button" ng-click="deletePerson(x)" class="btn btn-danger btn-rounded btn-xs my-0">Delete</button></td>
-
   			</tr>
 		</table>
     </div>
-  </div>
+</div>
