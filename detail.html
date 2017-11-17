@@ -18,13 +18,36 @@
 		<table style="width:85%; margin: 3% auto;" ng-show="c.selected">
 			<tr>
 				<th> No. </th>
-				<th> First Name </th>
-				<th> Last Name </th>
-				<th> Address </th>
-				<th> Salary </th>
+				<th> 
+				    <a href ng-click="sortType = 'FirstName'; sortReverse = !sortReverse">
+				    First Name
+				    <span ng-show="sortType == 'FirstName' && !sortReverse" class="fa fa-caret-down"></span>
+				    <span ng-show="sortType == 'FirstName' && sortReverse" class="fa fa-caret-up"></span>
+				    </a>
+				</th>
+				<th> 
+				    <a href ng-click="sortType = 'LastName'; sortReverse = !sortReverse">
+				    Last Name
+				    <span ng-show="sortType == 'LastName' && !sortReverse" class="fa fa-caret-down"></span>
+				    <span ng-show="sortType == 'LastName' && sortReverse" class="fa fa-caret-up"></span>
+				    </a>
+				</th>
+				<th> 
+				    <a href ng-click="sortType = 'Address'; sortReverse = !sortReverse">
+				    Address
+				    <span ng-show="sortType == 'Address' && !sortReverse" class="fa fa-caret-down"></span>
+				    <span ng-show="sortType == 'Address' && sortReverse" class="fa fa-caret-up"></span>
+				    </a>
+				</th>
+				<th> 
+				    <a href ng-click="sortType = 'Salary'; sortReverse = !sortReverse">
+				    Salary
+				    <span ng-show="sortType == 'Salary' && !sortReverse" class="fa fa-caret-down"></span>
+				    <span ng-show="sortType == 'Salary' && sortReverse" class="fa fa-caret-up"></span>
+				    </a>
 				<th>  </th>
 			</tr>
-  			<tr ng-repeat="x in Person | filter:{Company:c.selected['Company']}:true">
+  			<tr ng-repeat="x in Person | orderBy:sortType:sortReverse | filter:{Company:c.selected['Company']}:true">
     			<td>{{ $index+1 }}</td>
     			<td>{{ x.FirstName }}</td>
     			<td>{{ x.LastName }}</td>

@@ -48,6 +48,8 @@ var app = angular.module('ibm', ['ngSanitize', 'ui.bootstrap', 'ngRoute', 'ui.se
 })
 
 .controller('PersonCtrl', function($scope, $http){
+    $scope.sortType = 'FirstName';
+    $scope.sortReverse = false;
     $scope.loading = true;
     //submit user input data to server
     $scope.submitData = function(){
@@ -93,6 +95,8 @@ var app = angular.module('ibm', ['ngSanitize', 'ui.bootstrap', 'ngRoute', 'ui.se
 })
 
 .controller('DetailCtrl', function($scope, $http, $filter){
+    $scope.sortType = 'FirstName';
+    $scope.sortReverse = false;
     $scope.loading = true;
     //get all the employee data
 	$http.get("/a")
