@@ -8,6 +8,7 @@ Features:
 * Delete specific employee from the database.							
 * View company specific employees.						
 * Total money spent for each company.				
+* Sort table based on the  header.
 
 Technologies Used:
 
