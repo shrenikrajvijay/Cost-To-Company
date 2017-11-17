@@ -13,6 +13,7 @@ app.get('/', function(req, res){
 	});
 });
 
+// api -> return main.html template
 app.get('/main.html', function(req, res){	
     fs.readFile('./main.html', function(err, html){
 	if(err) throw err;
@@ -22,6 +23,7 @@ app.get('/main.html', function(req, res){
 	});
 });
 
+// api -> return detail.html template
 app.get('/detail.html', function(req, res){	
     fs.readFile('./detail.html', function(err, html){
 	if(err) throw err;
@@ -31,6 +33,7 @@ app.get('/detail.html', function(req, res){
 	});
 });
 
+// api -> return main.js 
 app.get('/js/main.js', function(req, res){	
     fs.readFile('js/main.js', function(err, html){
 	if(err) throw err;
@@ -40,19 +43,11 @@ app.get('/js/main.js', function(req, res){
 	});
 });
 
+// api -> return select.js 
 app.get('/js/select.js', function(req, res){	
     fs.readFile('js/select.js', function(err, html){
 	if(err) throw err;
 	res.writeHeader(200, {"Content-Type": "application/javascript"});
-	res.write(html);
-	res.end();
-	});
-});
-
-app.get('/images/dots.jpg', function(req, res){	
-    fs.readFile('images/dots.jpg', function(err, html){
-	if(err) throw err;
-	res.writeHeader(200, {"Content-Type": "image/jpeg"});
 	res.write(html);
 	res.end();
 	});
@@ -85,6 +80,7 @@ app.get('/css/select.css', function(req, res){
 	});
 });
 
+// api -> return all employees in the database
 app.get('/a', function(req, res){	
     connection.query('SELECT * from Person', function (error, results, fields) {
     	if (error) throw error;
@@ -92,6 +88,7 @@ app.get('/a', function(req, res){
     });
 });
 
+// api -> store the employee information supplied by the endpoint
 app.post('/storeData', function(req, res){	
     var body = "";
     req.on('data', function (chunk) {
@@ -120,6 +117,7 @@ app.post('/storeData', function(req, res){
     });
 });
 
+// api -> delete the specified employee from the database
 app.post('/deletePerson', function(req, res){	
     var id = "";
     req.on('data', function (chunk) {
@@ -138,12 +136,13 @@ app.post('/deletePerson', function(req, res){
     });
 });
 
+// create connection to database
 var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     password : '',
     database : 'ibm',
-    port 	   : 3306
+    port     : 3306
 });
  
 var PORT = 8080;
