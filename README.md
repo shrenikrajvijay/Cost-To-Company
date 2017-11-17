@@ -25,8 +25,8 @@ Installation:
 
 		 mysql -u username -p ibm < ibm.sql
 	
-	If you do not have mysql installed, install mysql and run the mysql daemon before proceeding with the next steps. The mysql daemon should run on standard port which is 3306.
-	After MySql daemon is running, create a database with name 'ibm' and run the above command. It will import the sample atabase. Here, username is the name that is specific to your database settings. If your settings has password, then specify password after -p. ibm is the name of the database specific to this application. ibm.sql is the file that will be used to make the database environment. It has the tables, structure and sample data.
+	If mysql is not installed, then install mysql and run the mysql daemon before proceeding with next steps. The mysql daemon should run on standard port which is 3306.
+	After MySql daemon is running, create a database with name 'ibm' and run the above command from command line. It will import the sample atabase. Here, username is the name that is specific to your database settings. If your settings has password, then specify password after -p. ibm is the name of the database specific to this application. ibm.sql is the file that will be used to make the database environment. It has the tables, structure and sample data.
 
 3. Install node and npm if it is not already installed.
 
