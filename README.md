@@ -45,3 +45,15 @@ Installation:
 	- localhost:8080
 
 If everything went well, then you should see the web page.
+
+SCREENSHOTS:
+
+![alt text](https://github.com/shrenikrajvijay/Cost-To-Company/blob/master/main.png)
+
+
+
+
+
+
+
+
