@@ -18,6 +18,7 @@ Technologies Used:
 
 Installation:
 1. Use command-line to clone files from github.
+
 		git clone https://github.com/shrenikrajvijay/Cost-To-Company
 
 2. Set up the database. Change directory to the cloned folder and issue the following command to import the database,
