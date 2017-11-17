@@ -27,7 +27,7 @@ Installation:
 		 mysql -u username -p ibm < ibm.sql
 	
 	If mysql is not installed, then install mysql and run the mysql daemon before proceeding with next steps. The mysql daemon should run on standard port which is 3306.
-	After MySql daemon is running, create a database with name 'ibm' and run the above command from command line. It will import the sample atabase. Here, username is the name that is specific to your database settings. If your settings has password, then specify password after -p. ibm is the name of the database specific to this application. ibm.sql is the file that will be used to make the database environment. It has the tables, structure and sample data.
+	After MySql daemon is running, create a database with name 'ibm' and run the above command from command line. It will import the sample database. Here, username is the name that is specific to your database settings. If your settings has password, then specify password after -p. ibm is the name of the database specific to this application. ibm.sql is the file that will be used to make the database environment. It has the tables, structure and sample data.
 
 3. Install node and npm if it is not already installed.
 
@@ -43,7 +43,6 @@ Installation:
 		npm install express
 
 	If everything runs fine, then it should output the following,
-
 		Running on http://localhost:8080
 
 5. After all the above is set up, issue reques to server by typing in the following inside the web browser,
