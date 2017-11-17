@@ -55,7 +55,7 @@ SCREENSHOTS:
 ![alt text](https://github.com/shrenikrajvijay/Cost-To-Company/blob/master/main.png)
 ![alt text](https://github.com/shrenikrajvijay/Cost-To-Company/blob/master/detail.png)
 
-Responsive:
+Responsive Layout:
 
 ![alt text](https://github.com/shrenikrajvijay/Cost-To-Company/blob/master/responsive.png)
 
