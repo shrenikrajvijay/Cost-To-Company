@@ -23,7 +23,8 @@ Installation:
 2. Set up the database. Change directory to the cloned folder and issue the following command to import the database,
 	- mysql -u username -p ibm < ibm.sql
 	
-	If you do not have mysql client installed, install mysql client and set up with username and password. Here, username is the name that is specific to your database settings. If your settings has password, then specify password after -p. ibm is the name of the database specific to this application. ibm.sql is the file that will be used to make the database environment. It has the table structure and sample data.
+	If you do not have mysql installed, install mysql and run the mysql daemon before proceeding with the next steps. 
+	After MySql daemon is running, run the above code. Here, username is the name that is specific to your database settings. If your settings has password, then specify password after -p. ibm is the name of the database specific to this application. ibm.sql is the file that will be used to make the database environment. It has the table structure and sample data.
 
 3. Install node and npm if it is not already installed.
 
