@@ -143,7 +143,7 @@ var connection = mysql.createConnection({
     user     : 'root',
     password : '',
     database : 'ibm',
-    port 	   : 3310
+    port 	   : 3306
 });
  
 var PORT = 8080;
