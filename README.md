@@ -1,5 +1,4 @@
-# Cost-To-Company
-[a link](https://shrenikrajvijay.github.io/Cost-To-Company/#/main)
+[# Cost-To-Company](https://shrenikrajvijay.github.io/Cost-To-Company/#/main)
 Introduction:
 		This application is used to keep track of employees and their salary on the basis of companies. It is a single page responsive web-application where the app is loaded as a single HTML page and dynamically updates the page as the user interacts with the app.
 	
